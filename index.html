@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+<div class="container">
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="./recursos/logo - coex.svg" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <a class="navbar-brand" href="#">Inicio</a>
+            <a class="navbar-brand " href="#">Productos</a>
+            <a class="navbar-brand" href="#">Compras</a>
+            <a class="navbar-brand" href="#">Inventario</a>
+            <a class="navbar-brand" href="#">Ventas</a>
+            <a class="navbar-brand" href="#">Adicionales</a>
+          </div>
+          <div>
+            <a href=""><img src="./recursos/person-fill.svg" alt=""></a>
+            <a class="navbar-brand" href="#">Perfil</a>
+          </div>
+        </div>
+      </nav>
+</div>
+
+
+<div class="container">
+
+    <div class="container-llamar">
+        <div class="">
+            <a class="nav-link " aria-current="page" href="#"><b>PRODUCTOS</b> #de item</a>
+        </div>
+    
+        <form class="d-flex" role="search">
+            Filtro <img src="./recursos/filter.svg" alt=""> 
+            <input class="form-control me-2 " type="search" placeholder="Search" aria-label="Search" >
+            <img class="icono-search" src="./recursos/search.svg" alt="">
+        </form>
+                    
+        <div class="llamar-modal">
+            <button type="button" class="btn btn-danger" id="eliminar"><img src="./recursos/trash3-fill.svg" alt=""></button>
+            <button type="button" class=" btn btn-success" id="agregar">Agregar</button>
+        </div>
+            
+    </div>
+
+
+    <div class="container">
+        <table class="table">
+            <tr>
+                <th scope="col"><img src="./recursos/app.svg" alt=""></th>
+                <th scope="col">ID</th>
+                <th scope="col">Imagen</th>
+                <th scope="col">UID</th>
+                <th scope="col">Referencia</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Categoria</th>
+                <th scope="col">Subcategoria</th>
+            </tr>
+              
+        </table>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container-m">
+    <div class="contenido">
+        <div class="izquierdo">
+            <div class="arriba">
+
+                <div class="imagen">
+                    <div>
+                        <input type="checkbox">
+                        <label for="">seleccionar como imagen principal</label>
+                    </div>
+                    <div class="imagenes">
+                        <img class="productos" src="./recursos/celular.png" alt="">
+                        <img class="productos" src="./recursos/pc.png" alt="">
+                        <img class="productos" src="./recursos/pcgamer.png" alt="">
+                        <img class="productos" src="./recursos/moto.png" alt="">
+                    </div>
+                </div>
+
+                <form class="form-1" action="">
+                    <label for="">Nombre del producto</label>
+                    <input type="text" placeholder="camisa de rayas" id="nombre" required>
+
+                    <label for="">Descripcion del producto</label>
+                    <input type="text">
+
+                    <label for="">UID</label>
+                    <input type="text" id="uid" required>
+
+                    <label for="">Referencia</label>
+                    <input type="text" id="referencia" required>
+
+                    <label for="">Variante</label>
+                    <select name="select">
+                        <option value="">Elegir variante</option>
+                        <option value="value1">Variante 1</option>
+                        <option value="value2" selected>Variante 2</option>
+                        <option value="value3">Variante 3</option>
+                    </select>
+
+                   
+                </form>
+
+            </div>
+            <div class="abajo my-5">
+                <label for="">Especificaciones del producto</label>
+                <textarea name="textarea" rows="5" cols="20"></textarea>
+            </div>
+        </div>
+        <div class="derecha">
+            <form action="" class="form-2">
+                <h3>Informacion</h3>
+
+                <label for="">Categoria</label>
+                <select name="select" id="categoria" required>
+                    <option value="">Elegir categoria</option>
+                    <option value="categoria 1">categoria 1</option>
+                    <option value="categoria 2" selected>categoria 2</option>
+                    <option value="categoria 3">categoria 3</option>
+                </select>
+
+                <label for="">Subcategoria</label>
+                <select name="select" id="subcategoria" required>
+                    <option value="">Elegir Subcategoria</option>
+                    <option value="Subcategoria 1">Subcategoria 1</option>
+                    <option value="Subcategoria 2" selected>Subcategoria 2</option>
+                    <option value="Subcategoria 3">Subcategoria 3</option>
+                </select>
+
+                <label for="">Tags</label>
+                <select name="select">
+                    <option value="">Elegir Tags</option>
+                    <option value="value1">Tags 1</option>
+                    <option value="value2" selected>Tags 2</option>
+                    <option value="value3">Tags 3</option>
+                </select>
+
+                <label for="">Destacado</label>
+                <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                    <label class="btn btn-outline-primary" for="btnradio1">Si</label>
+                  
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                    <label class="btn btn-outline-primary" for="btnradio2">No</label>
+                  
+                </div>
+
+                <div class="botones">
+                    <button type="button" class="btn btn-primary btn-lg" id="guardar">Guardar cambios</button>
+                    <button type="button" class="cancelar btn btn-secondary btn-lg" id="cancelar">Cancelar</button>
+                </div>
+                
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html>
+
